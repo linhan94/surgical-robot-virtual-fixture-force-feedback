@@ -2,7 +2,7 @@
 
 * Author: Han Lin
 
-Example robots and code for interfacing Gazebo with ROS
+Da Vinci robots and code for interfacing Gazebo with ROS
 
 ## Tutorials
 
