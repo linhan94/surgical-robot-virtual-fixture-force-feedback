@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<robot name="lung" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <xacro:include filename="$(find rrbot_description)/urdf/lung.gazebo" />
+  <!-- Import Rviz colors -->
+  <xacro:include filename="$(find rrbot_description)/urdf/materials.xacro" />
+
+  <!-- Used for fixing robot to Gazebo 'base_link' -->
+  <link name="world"/>
+
+  <joint name="fixed" type="fixed">
+    <parent link="world"/>
+    <child link="lung"/>
+  </joint>
+
+    <link name="lung">
+      <visual>
+        <origin xyz="0.001875 -0.3 100" rpy="0.0 0.0 0.0"/>
+        <geometry>
+          <mesh filename="package://rrbot_description/meshes/lung.stl"/>
+        </geometry>
+        <material name="gray"><color rgba="0.5 0.5 0.9 0.5"/></material>
+      </visual>
+      <collision>
+        <origin xyz="0.001875 -0.3 100" rpy="0.0 0.0 0.0"/>
+        <geometry>
+          <mesh filename="package://rrbot_description/meshes/lung.stl"/>
+        </geometry>
+      </collision>
+    <inertial>
+      <mass value="1000"/>
+      <inertia 	  
+	  ixx="0.0" ixy="0.0" ixz="0.0"
+	  iyy="0.0" iyz="0.0"
+	  izz="0.0"/>
+    </inertial>
+    </link>
+
+</robot>
+

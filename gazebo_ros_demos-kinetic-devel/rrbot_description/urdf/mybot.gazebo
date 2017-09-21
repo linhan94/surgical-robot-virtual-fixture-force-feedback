@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot>
+
+  <!-- link 5: tool_wrist_caudier_link -->
+  <gazebo reference="tool_wrist_caudier_link">
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+    <!-- link 6: tool_wrist_caudier_link_shaft -->
+  <gazebo reference="tool_wrist_caudier_link_shaft">
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+    <!-- link 7-0: Outer open angle virtual -->
+  <gazebo reference="tool_wrist_caudier_ee_link_0">
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+    <!-- link 7-1: Outer open angle link 1 -->
+  <gazebo reference="tool_wrist_caudier_link_2_left">
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+    <!-- link 7-1: Outer open angle link 1 -->
+  <gazebo reference="tool_wrist_caudier_link_2_left">
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+    <!-- link 7-2: Outer open angle link 2 -->
+  <gazebo reference="tool_wrist_caudier_link_2_left">
+    <material>Gazebo/Green</material>
+  </gazebo>
+
+
+</robot>

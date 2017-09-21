@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<robot>
+  <!-- Link1 -->
+  <gazebo reference="box">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+
+</robot>
