@@ -3,6 +3,8 @@
 This directory contains:
 * dvrk_python module.  This modules defines the class `robot` which uses the dVRK ROS topics to communicate with the `dvrk_console_json` application included in the `dvrk_robot` ROS package.
 * tutorial examples.  Python scripts using the `dvrk_python` module.
+* Impedance virtual fixture
+* Gazebo control interface
 
 ## Requirements
 
